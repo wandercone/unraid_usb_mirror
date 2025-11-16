@@ -14,6 +14,7 @@ Real-time mirroring of your Unraid USB boot drive to a backup USB device using i
 - [Requirements](#requirements)
 - [Notifications](#notifications)
 - [Configuration](#configuration)
+- [Example](#example)
 
 ## Requirements
 
@@ -38,4 +39,17 @@ Edit these variables at the top of the script:
 PRIMARY_USB = "/boot"                    # Your Unraid USB
 BACKUP_USB = "/mnt/disks/UNRAID-backup"          # Your backup USB mount
 EXCLUDED_PATHS = ['System Volume Information']  # Paths to ignore
+```
+### Example
+
+```
+[2025-11-16 09:46:10] [INFO] Initial sync completed: 575 changes made
+[2025-11-16 09:46:10] [INFO] Starting inotify monitoring...
+[2025-11-16 09:46:10] [INFO] Watching: /boot
+[2025-11-16 09:47:16] [DEBUG] Detected change: passwd
+[2025-11-16 09:47:16] [INFO] Synced: config/passwd
+[2025-11-16 09:47:16] [DEBUG] Detected change: shadow
+[2025-11-16 09:47:16] [INFO] Synced: config/shadow
+[2025-11-16 09:47:16] [DEBUG] Detected change: smbpasswd
+[2025-11-16 09:47:16] [INFO] Synced: config/smbpasswd
 ```
