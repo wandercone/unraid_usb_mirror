@@ -36,8 +36,8 @@ Check your Unraid notification center for alerts.
 Edit these variables at the top of the script:
 
 ```python
-PRIMARY_USB = "/boot"                    # Your Unraid USB
-BACKUP_USB = "/mnt/disks/UNRAID-backup"          # Your backup USB mount
+BOOT_USB = "/boot"                    # Your Unraid USB
+BACKUP_DEST = "/mnt/disks/UNRAID-backup"          # Your backup USB mount
 EXCLUDED_PATHS = ['System Volume Information']  # Paths to ignore
 ```
 ### Example
